@@ -1,0 +1,6 @@
+ansible-lint
+ansible
+molecule[docker]
+molecule[podman]
+docker
+requests

@@ -1,0 +1,13 @@
+---
+- name: install the latest version of nginx
+  become: yes
+  package:
+    name: nginx
+    state: present
+    update_cache: true
+
+- name: start the nginx service
+  become: yes
+  systemd:
+    name: nginx
+    state: started
